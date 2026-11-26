@@ -1,0 +1,30 @@
+{
+  "name": "systopic/signage",
+  "description": "Fluxo Signage: public screens, touch terminals and presentation walls as sites of Fluxo CMS, exported as static HTML5 packages for an on-site signage server.",
+  "type": "library",
+  "license": "proprietary",
+  "version": "dev-main",
+  "require": {
+    "php": "^8.4",
+    "ext-imagick": "*",
+    "systopic/db": "^1.1",
+    "systopic/system": "^1.3",
+    "systopic/cms": "^1.0"
+  },
+  "suggest": {
+    "systopic/relay": "live test on a wall from the CMS and touch-to-wall relay in the CMS preview"
+  },
+  "autoload": {
+    "psr-4": {
+      "Systopic\\Signage\\": "src/"
+    },
+    "files": [
+      "autoload.php"
+    ]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.x-dev"
+    }
+  }
+}

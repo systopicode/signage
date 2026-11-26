@@ -1,0 +1,22 @@
+# local only - never part of the package. Docs and plans travel with the
+# repo, tools stay on the machine.
+/.cursor/*
+!/.cursor/docs/
+!/.cursor/plans/
+/.vscode/
+/vendor/
+/composer.lock
+
+# the sync's own files - a .sync/.htsync carries keys and trusted instances
+/.sync
+/.sync.cookies
+/sync.zip
+/.htsync
+/.htsync.zip
+/.htsync.cookies
+/sync.php
+
+# per machine config, os leftovers
+*.local.json
+.DS_Store
+Thumbs.db
